@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Deneme</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">     <!--static klasorundeki css'i baglama-->
+</head>
+<body>
+    <h1>FILMATOR</h1>
+    <form method="POST">
+  <div id="form-alani">     <!--butonlari/inputlari gruplamak icin-->
+    <select name="hisse[]">
+      <option value="nvidia">Nvidia</option>
+      <option value="altin">Altin</option>
+      <option value="avgo">Avgo</option>
+      <option value="apple">Apple</option>
+      <option value="tesla">Tesla</option>
+      <option value="microsoft">Microsoft</option>
+      <option value="amazon">Amazon</option>
+      <option value="google">Google</option>
+      <option value="netflix">Netflix</option>
+      <option value="amd">AMD</option>
+    </select>
+    <input type="text" name="tutar[]" placeholder="Baslangic tutari">
+    <input type="text" name="yil" placeholder="Kaç yil">
+  </div>
+  <div id="yatirimlar">     <!--JS ile dinamik olarak yeni yatirim satirlari buraya eklenecek-->
+  </div>
+  <div id="alt-butonlar">
+    <button type="button" id="yatirimEkle">+ Yatirim Ekle</button>     <!--type=button: formu GONDERMEZ, sadece satir ekler-->
+    <button type="submit" id="hesaplaBtn">Hesapla</button>
+  </div>
+</form>
+
+<div id="sonucAlani"></div>
+
+{% if hata %}     <!--gecersiz giris/veri durumunda goster-->
+    <p class="gecersiz" style="color: yellow;">{{ hata }}</p>
+{% endif %}
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

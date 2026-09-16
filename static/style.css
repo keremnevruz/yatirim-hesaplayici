@@ -1,0 +1,71 @@
+#form-alani {
+    display: flex;
+    justify-content: center;
+    width: 1900px;
+}
+
+body {
+    background-color: purple;
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    padding: 20px;
+}
+
+table {
+    margin: 0 auto;         /* tabloyu sayfada ortala (display:flex yerine) */
+    border-collapse: collapse;   /* hucreler arasi cift kenarlik gorunumunu kaldirir */
+    color: yellow;
+    font-size: 20px;
+}
+
+#form-alani input,
+#form-alani button {
+    font-size: 13px;
+    padding: 15px;
+}
+
+.gecersiz {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding: 20px;
+}
+
+th, td {
+    padding: 10px 25px;     /* her hucreye yatay/dikey bosluk - senin dedigin "padding artirma" tam burasi */
+    text-align: center;
+}
+
+#yatirimlar {
+    display: flex;
+    flex-wrap: wrap;          /* cok satir olursa alt satira gecsin */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 1900px;
+    margin: 0 auto;
+}
+
+#yatirimlar select,
+#yatirimlar input,
+#yatirimlar button {
+    font-size: 13px;
+    padding: 15px;
+}
+
+#alt-butonlar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+#alt-butonlar button {
+    font-size: 13px;
+    padding: 15px;
+}
