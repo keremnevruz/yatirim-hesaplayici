@@ -93,4 +93,5 @@ def anasayfa():
     return render_template("index.html", sonuc=None)     #ilk acilista (GET) form bos gosterilir
 
 
-app.run(debug=True)     #debug=True: kod kaydedince sunucu otomatik yenilenir
+if __name__ == "__main__":
+    app.run(debug=True)     #debug=True: kod kaydedince sunucu otomatik yenilenir
