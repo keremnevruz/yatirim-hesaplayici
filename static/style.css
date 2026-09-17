@@ -1,7 +1,10 @@
 #form-alani {
     display: flex;
     justify-content: center;
-    width: 1900px;
+    flex-wrap: wrap;
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 body {
@@ -43,11 +46,10 @@ th, td {
 
 #yatirimlar {
     display: flex;
-    flex-wrap: wrap;          /* cok satir olursa alt satira gecsin */
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 1900px;
+    flex-wrap: wrap;
+    max-width: 1900px;
+    width: 100%;
     margin: 0 auto;
 }
 
