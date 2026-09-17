@@ -19,6 +19,13 @@ h1 {
     padding: 20px;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 12vw;     /* ekran genisligine gore olceklenir, tasmaz */
+        padding: 10px;
+    }
+}
+
 table {
     margin: 0 auto;         /* tabloyu sayfada ortala (display:flex yerine) */
     border-collapse: collapse;   /* hucreler arasi cift kenarlik gorunumunu kaldirir */
