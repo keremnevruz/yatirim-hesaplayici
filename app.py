@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import yfinance as yf
 from datetime import datetime, timedelta
 import math 
+import os
 
 app = Flask(__name__)
 
@@ -94,4 +95,7 @@ def anasayfa():
 
 
 if __name__ == "__main__":
+    test_mesaji = os.environ.get("TEST_MESAJI", "Ortam degiskeni bulunamadi, varsayilan calisiyor!")
+    print(test_mesaji)
     app.run(debug=True)     #debug=True: kod kaydedince sunucu otomatik yenilenir
+
