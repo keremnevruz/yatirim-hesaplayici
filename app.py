@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, jsonify
 import yfinance as yf
 from datetime import datetime, timedelta
 import math 
-import os
 
 app = Flask(__name__)
 
@@ -92,9 +91,6 @@ def anasayfa():
             return jsonify(hata="Lutfen gecerli bir deger giriniz!")
 
     return render_template("index.html", sonuc=None)     #ilk acilista (GET) form bos gosterilir
-
-test_mesaji = os.environ.get("TEST_MESAJI", "Ortam degiskeni bulunamadi, varsayilan calisiyor!")
-print(test_mesaji)
 
 
 if __name__ == "__main__":
