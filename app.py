@@ -93,9 +93,10 @@ def anasayfa():
 
     return render_template("index.html", sonuc=None)     #ilk acilista (GET) form bos gosterilir
 
+test_mesaji = os.environ.get("TEST_MESAJI", "Ortam degiskeni bulunamadi, varsayilan calisiyor!")
+print(test_mesaji)
+
 
 if __name__ == "__main__":
-    test_mesaji = os.environ.get("TEST_MESAJI", "Ortam degiskeni bulunamadi, varsayilan calisiyor!")
-    print(test_mesaji)
     app.run(debug=True)     #debug=True: kod kaydedince sunucu otomatik yenilenir
 
