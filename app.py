@@ -42,6 +42,7 @@ borsa_sembolleri = {     #isim -> yfinance sembolu eslestirmesi (BIST hisseleri 
     "google": "GOOG",
     "netflix": "NFLX",
     "amd": "AMD",
+    "meta": "META",
 }
 
 @app.route("/", methods=["GET", "POST"])     #hem sayfa gorunumu hem form gonderimi kabul et
